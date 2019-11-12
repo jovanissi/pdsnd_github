@@ -72,11 +72,21 @@ def get_month():
 
 
 def get_day():
+    """
+    Function get day choosen by the user. It is called when the user chooses
+    to filter by day of week
+
+    Returns:
+        (str) day - name of the day of week to filter by
+    """
     day = input('Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday?\n')
     
     days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     not_right_day = True
     
+    """
+    A while loop that runs until the user enters the right day of the week
+    """
     while not_right_day:
         day = day.lower()
         if day in days:
