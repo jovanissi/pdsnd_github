@@ -62,6 +62,12 @@ You will learn about bike share use in Chicago, New York City, and Washington by
     <li>earliest, most recent, most common year of birth (only available for NYC and Chicago)</li>
 </ul>
 
+### Files used
+<ul>
+    <li><b>chicago.csv</b></li>
+    <li><b>new_york_city.csv</b></li>
+    <li><b>washington.csv</b></li>
+</ul>
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
