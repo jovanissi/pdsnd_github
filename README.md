@@ -28,8 +28,40 @@ The Chicago and New York City files also have the following two columns:
     <li>Birth Year</li>
 </ul>
 
-### Files used
-Include the files used
+#### Statistics Computed
+You will learn about bike share use in Chicago, New York City, and Washington by computing a variety of descriptive statistics. In this project, you can find the following computed information:
+
+#### #1 Popular times of travel (i.e., occurs most often in the start time)
+
+<ul>
+    <li>most common month</li>
+    <li>most common day of week</li>
+    <li>most common hour of day</li>
+</ul>
+
+#### #2 Popular stations and trip
+
+<ul>
+    <li>most common start station</li>
+    <li>most common end station</li>
+    <li>most common trip from start to end (i.e., most frequent combination of start station and end station)</li>
+</ul>
+
+#### #3 Trip duration
+
+<ul>
+    <li>total travel time</li>
+    <li>average travel time</li>
+</ul>
+
+#### #4 User info
+
+<ul>
+    <li>counts of each user type</li>
+    <li>counts of each gender (only available for NYC and Chicago)</li>
+    <li>earliest, most recent, most common year of birth (only available for NYC and Chicago)</li>
+</ul>
+
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
