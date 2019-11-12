@@ -223,7 +223,13 @@ def user_stats(df):
     
     
 def display_raw_data(df, count=0):
-    """Displaying raw data to user if they choose to"""
+    """
+    Asks user if they want to display raw data
+
+    Returns:
+        (bool) True - Display the next five rows of raw data
+        (bool) False - Stops the loop, and continues the program
+    """
     
     choice = input('Would you like to see raw data? Choose "yes" or "no"\n')
     
@@ -242,6 +248,10 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
         
+        """
+        While loop used to prompt user to choose whether the see raw data or not.
+        It runs every time the user chooses 'yes', and stops when they choose 'no'.
+        """
         count = 0
         while display_raw_data(df, count):
             count += 1
