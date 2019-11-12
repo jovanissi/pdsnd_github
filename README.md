@@ -70,5 +70,22 @@ You will learn about bike share use in Chicago, New York City, and Washington by
 </ul>
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+<ul>
+    <li>
+        <a href="https://github.com/udacity/pdsnd_github">
+            https://github.com/udacity/pdsnd_github
+        </a>
+    </li>
+    <li>
+        <a href="https://www.motivateco.com/">
+            https://www.motivateco.com/
+        </a>
+    </li>
+    <li>
+        <a href="https://www.udacity.com/">
+            https://www.udacity.com/
+        </a>
+    </li>
+</ul>
 
