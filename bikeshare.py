@@ -44,11 +44,22 @@ def get_filters():
                       
                       
 def get_month():
+    """
+    Function get month choosen by the user. It is called when the user chooses
+    to filter by month
+
+    Returns:
+        (str) month - name of the month to filter by 
+    """
     month = input('Which month? January, February, March, April, May, or June?\n')
     
     months = ['january', 'february', 'march', 'april', 'may', 'june']
     not_right_month = True
     
+    """
+    A while loop that runs until the user enters the right month from the
+    months list
+    """
     while not_right_month:
         month = month.lower()
         if month in months:
@@ -61,11 +72,21 @@ def get_month():
 
 
 def get_day():
+    """
+    Function get day choosen by the user. It is called when the user chooses
+    to filter by day of week
+
+    Returns:
+        (str) day - name of the day of week to filter by
+    """
     day = input('Which day? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or Sunday?\n')
     
     days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
     not_right_day = True
     
+    """
+    A while loop that runs until the user enters the right day of the week
+    """
     while not_right_day:
         day = day.lower()
         if day in days:
@@ -202,7 +223,13 @@ def user_stats(df):
     
     
 def display_raw_data(df, count=0):
-    """Displaying raw data to user if they choose to"""
+    """
+    Asks user if they want to display raw data
+
+    Returns:
+        (bool) True - Display the next five rows of raw data
+        (bool) False - Stops the loop, and continues the program
+    """
     
     choice = input('Would you like to see raw data? Choose "yes" or "no"\n')
     
@@ -221,6 +248,10 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
         
+        """
+        While loop used to prompt user to choose whether the see raw data or not.
+        It runs every time the user chooses 'yes', and stops when they choose 'no'.
+        """
         count = 0
         while display_raw_data(df, count):
             count += 1
