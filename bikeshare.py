@@ -44,11 +44,22 @@ def get_filters():
                       
                       
 def get_month():
+    """
+    Function get month choosen by the user. It is called when the user chooses
+    to filter by month
+
+    Returns:
+        (str) month - name of the month to filter by 
+    """
     month = input('Which month? January, February, March, April, May, or June?\n')
     
     months = ['january', 'february', 'march', 'april', 'may', 'june']
     not_right_month = True
     
+    """
+    A while loop that runs until the user enters the right month from the
+    months list
+    """
     while not_right_month:
         month = month.lower()
         if month in months:
